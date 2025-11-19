@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics -->
+    <!-- REPLACE 'G-XXXXXXXXXX' WITH YOUR ACTUAL MEASUREMENT ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <title>How to See Differently | Unlocking the Creative Way of Life</title>
+    <meta name="description"
+        content="Discover 'How to See Differently', a transformative guide to unlocking creativity in everyday life. Learn to find beauty in the ordinary and live with greater presence.">
+    <meta name="keywords"
+        content="creativity, mindfulness, art of living, conscious living, book, self-help, perspective, seeing differently">
+    <meta name="author" content="The Author">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://howtoseedifferently.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://howtoseedifferently.com/">
+    <meta property="og:title" content="How to See Differently | Unlocking the Creative Way of Life">
+    <meta property="og:description"
+        content="A companion for the journey of your own life. Discover the art of seeing differently and unlocking the creative potential in ordinary moments.">
+    <meta property="og:image" content="https://howtoseedifferently.com/cover-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://howtoseedifferently.com/">
+    <meta property="twitter:title" content="How to See Differently | Unlocking the Creative Way of Life">
+    <meta property="twitter:description" content="A gentle invitation to live with consciousness, presence, and care.">
+    <meta property="twitter:image" content="https://howtoseedifferently.com/cover-preview.jpg">
+
+    <!-- Structured Data (JSON-LD) for Book -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": "How to See Differently: Unlocking the Creative Way of Life",
+      "author": {
+        "@type": "Person",
+        "name": "Farid Jafarli" 
+      },
+      "url": "https://howtoseedifferently.com",
+      "description": "A series of gentle invitations, each one offering a different way to see what surrounds you every day. This book is a companion for the journey of your own life.",
+      "offers": {
+        "@type": "Offer",
+        "price": "7.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.amazon.com/dp/B0FR3VL7Z7"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF7;
+            /* Soft paper color */
+            color: #2D3748;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .book-shadow {
+            box-shadow:
+                -15px 0 30px -10px rgba(0, 0, 0, 0.3),
+                0 20px 40px -10px rgba(0, 0, 0, 0.2);
+        }
+
+        .texture-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4c5b0' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .quote-mark {
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.1;
+            font-family: serif;
+            color: #4A5568;
+            z-index: 0;
+        }
+
+        .loader {
+            border-top-color: #57534e;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased texture-bg selection:bg-stone-200 selection:text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#FDFBF7]/90 backdrop-blur-sm border-b border-stone-200 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="serif-font text-2xl font-semibold text-stone-800 tracking-wide">How to See
+                        Differently</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-stone-600 hover:text-stone-900 transition-colors">About</a>
+                    <a href="#experience" class="text-stone-600 hover:text-stone-900 transition-colors">Experience</a>
+                    <a href="#chapters" class="text-stone-600 hover:text-stone-900 transition-colors">Chapters</a>
+                    <a href="#author" class="text-stone-600 hover:text-stone-900 transition-colors">Author</a>
+                    <a href="https://www.amazon.com/dp/B0FR3VL7Z7" target="_blank" rel="noopener noreferrer"
+                        class="bg-stone-800 text-white px-6 py-2 rounded-full hover:bg-stone-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Buy on Amazon
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-stone-600 hover:text-stone-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#FDFBF7] border-b border-stone-200">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#about" class="block px-3 py-2 text-stone-600 hover:text-stone-900">About</a>
+                <a href="#experience" class="block px-3 py-2 text-stone-600 hover:text-stone-900">Experience</a>
+                <a href="#chapters" class="block px-3 py-2 text-stone-600 hover:text-stone-900">Chapters</a>
+                <a href="#author" class="block px-3 py-2 text-stone-600 hover:text-stone-900">Author</a>
+                <a href="https://www.amazon.com/dp/B0FR3VL7Z7" target="_blank" rel="noopener noreferrer"
+                    class="block px-3 py-2 text-stone-800 font-semibold">Buy on Amazon</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left mb-12 lg:mb-0 relative z-10">
+                    <div
+                        class="inline-block px-4 py-1 mb-6 border border-stone-300 rounded-full text-sm tracking-widest uppercase text-stone-500 bg-white/50">
+                        New Release
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-medium text-stone-900 mb-6 leading-tight">
+                        Unlock the <span class="italic text-stone-600">Creative</span> Way of Life
+                    </h1>
+                    <p class="text-xl text-stone-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                        Creativity is not reserved for painters or musicians. It belongs to anyone who chooses to live
+                        with consciousness, presence, and care. Discover the art of seeing differently.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://www.amazon.com/dp/B0FR3VL7Z7" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center justify-center gap-2 bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <span>Get Your Copy</span>
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#excerpt"
+                            class="flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg text-stone-700 border border-stone-300 hover:bg-stone-100 transition-all duration-300">
+                            <span>Read Introduction</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Cover Mockup -->
+                <div class="lg:col-span-5 relative z-10 flex justify-center perspective-1000">
+                    <div
+                        class="relative w-64 h-96 sm:w-80 sm:h-[480px] bg-[#E8E6E1] rounded-r-md book-shadow transform rotate-y-12 transition-transform duration-500 hover:rotate-0 cursor-pointer group">
+                        <!-- Spine -->
+                        <div
+                            class="absolute left-0 top-0 bottom-0 w-4 bg-[#D6D4CF] transform -translate-x-full origin-right skew-y-6">
+                        </div>
+
+                        <!-- Cover Content -->
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center border-l border-stone-300/20 bg-gradient-to-br from-[#f5f5f0] to-[#e0e0db]">
+                            <div
+                                class="absolute top-0 left-0 w-full h-full opacity-30 bg-[url('https://www.transparenttextures.com/patterns/paper.png')]">
+                            </div>
+
+                            <div class="z-10 flex flex-col h-full justify-between py-8">
+                                <div>
+                                    <h2 class="serif-font text-3xl sm:text-4xl text-stone-800 leading-tight mb-2">How to
+                                        See Differently</h2>
+                                    <div class="w-12 h-0.5 bg-stone-400 mx-auto my-4"></div>
+                                    <p class="text-sm tracking-widest uppercase text-stone-500">Unlocking the Creative
+                                        Way of Life</p>
+                                </div>
+
+                                <!-- Abstract Eye Icon -->
+                                <div class="text-stone-400 opacity-80">
+                                    <svg class="w-20 h-20 mx-auto" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </div>
+
+                                <div class="text-stone-600 text-sm font-medium">
+                                    A Guide to Conscious Living
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Circle -->
+                    <div
+                        class="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-stone-200 rounded-full blur-3xl opacity-50">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="py-20 bg-white border-y border-stone-100 relative">
+        <div class="max-w-4xl mx-auto px-4 text-center relative">
+            <i class="fas fa-quote-left quote-mark top-0 left-0 transform -translate-x-1/2 -translate-y-1/4"></i>
+            <p class="serif-font text-2xl md:text-4xl text-stone-800 italic leading-relaxed relative z-10">
+                "The artist and the person living an ordinary life are not different species. They are the same being,
+                one more conscious of their creative nature than the other."
+            </p>
+            <div class="mt-8 w-16 h-1 bg-stone-800 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- About / What You'll Discover -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="serif-font text-4xl text-stone-900 mb-4">A Series of Gentle Invitations</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">
+                    This book is not a manual with steps to follow or techniques to master. Instead, it is a companion
+                    for the journey you are already taking.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300">
+                    <div
+                        class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-stone-700">
+                        <i class="fas fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="serif-font text-2xl text-stone-900 mb-3">The Beginner's Eye</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Learn to see the familiar world with fresh eyes. Discover how expertise can sometimes blind us,
+                        and how returning to a state of wonder unlocks hidden beauty in the ordinary.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300">
+                    <div
+                        class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-stone-700">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="serif-font text-2xl text-stone-900 mb-3">Nature's Lessons</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Understand the rhythms of discipline through the lens of nature. Like the river that carves
+                        stone through persistence, learn how to create without force or burnout.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300">
+                    <div
+                        class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center mb-6 text-stone-700">
+                        <i class="fas fa-fingerprint text-xl"></i>
+                    </div>
+                    <h3 class="serif-font text-2xl text-stone-900 mb-3">Living as an Artist</h3>
+                    <p class="text-stone-600 leading-relaxed">
+                        Realize that the way you arrange your room, the way you listen to a friend, and the way you move
+                        through your day are all acts of profound creativity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excerpt Section -->
+    <section id="excerpt" class="py-24 bg-stone-900 text-stone-300 relative overflow-hidden">
+        <!-- Background accent -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-stone-800 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-stone-800 rounded-full opacity-20 blur-3xl">
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-stone-400 uppercase tracking-widest text-sm">From Chapter 1</span>
+                <h2 class="serif-font text-3xl md:text-4xl text-white mt-2">The Doorway of Seeing</h2>
+            </div>
+
+            <div
+                class="bg-stone-800/50 p-8 md:p-12 rounded-lg font-light leading-loose text-lg md:text-xl backdrop-blur-sm border border-stone-700/50">
+                <p class="mb-6">
+                    "Most people move through their days like passengers on a train, watching the world blur past the
+                    window. They see buildings, trees, faces, but nothing stops them. Nothing asks them to pause."
+                </p>
+                <p class="mb-6">
+                    "But right now, in this moment, something has shifted. You picked up this book. You chose to slow
+                    down. You sensed there might be another way to move through your life."
+                </p>
+                <p class="text-stone-100 italic">
+                    "The difference between looking and seeing is the difference between surviving and living."
+                </p>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://www.amazon.com/dp/B0FR3VL7Z7" target="_blank"
+                    class="inline-flex items-center gap-2 text-white border-b border-stone-500 pb-1 hover:text-stone-200 hover:border-white transition-colors">
+                    Read the rest on Amazon <i class="fas fa-external-link-alt text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters List -->
+    <section id="chapters" class="py-24 px-4 bg-[#FDFBF7]">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="serif-font text-4xl text-stone-900 mb-4">The Journey Ahead</h2>
+                <p class="text-stone-600">25 Chapters designed to awaken the creativity within you.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-4 text-stone-700">
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">01</span> The Doorway of Seeing
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">02</span> What It Means to Create
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">03</span> The World as Canvas
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">04</span> Attention Is the First Act
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">05</span> The Beginner's Eye
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">06</span> Silence and Stillness
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">07</span> The Space Between Thoughts
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">08</span> Listening Without Noise
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">09</span> Trusting the Unknown
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">10</span> Fear as a Teacher
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">11</span> Showing Up Every Day
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">12</span> The Rhythm of Discipline
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">13</span> Mistakes as Seeds
+                </div>
+                <div
+                    class="flex items-center p-4 border-b border-stone-200 hover:bg-white hover:pl-6 transition-all cursor-default">
+                    <span class="text-stone-400 w-8 font-serif italic">14</span> Flow and Surrender
+                </div>
+                <!-- More chapters hinted -->
+                <div class="md:col-span-2 text-center pt-8 italic text-stone-500">
+                    ...and 11 more chapters guiding you back to yourself.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW AI EXPERIENCE SECTION -->
+    <section id="experience" class="py-24 px-4 bg-stone-100 border-y border-stone-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="serif-font text-4xl text-stone-900 mb-4">Practice Seeing Differently</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">
+                    Use these interactive companions to begin your journey right now.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10">
+
+                <!-- AI Feature 1: The Daily Invitation -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-stone-200 flex flex-col">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-stone-800 text-white p-3 rounded-full">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3 class="serif-font text-2xl text-stone-900">The Daily Invitation</h3>
+                    </div>
+                    <p class="text-stone-600 mb-6 flex-grow">
+                        Receive a unique, gentle prompt to guide your attention today. A small act of mindfulness to
+                        open your eyes to the ordinary.
+                    </p>
+
+                    <div id="daily-invitation-result"
+                        class="hidden mb-6 p-6 bg-[#FDFBF7] rounded-lg border border-stone-200 italic text-stone-800 serif-font text-lg leading-relaxed">
+                        <!-- Content will appear here -->
+                    </div>
+
+                    <button id="generate-prompt-btn" onclick="generateInvitation()"
+                        class="w-full bg-stone-800 text-white px-6 py-3 rounded-xl hover:bg-stone-700 transition-all duration-300 shadow-md flex items-center justify-center gap-2 mt-auto">
+                        <span id="prompt-btn-text">Spark a Moment ✨</span>
+                        <div id="prompt-loader"
+                            class="loader ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5 hidden">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- AI Feature 2: The Lens of Wonder (Image Analysis) -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-stone-200 flex flex-col">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-stone-800 text-white p-3 rounded-full">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h3 class="serif-font text-2xl text-stone-900">The Lens of Wonder</h3>
+                    </div>
+                    <p class="text-stone-600 mb-6 flex-grow">
+                        Upload a photo of something ordinary—a cup, a shadow, a street corner. Let us reveal the hidden
+                        poetry within it.
+                    </p>
+
+                    <div class="mb-6">
+                        <input type="file" id="image-upload" accept="image/*" class="hidden"
+                            onchange="handleImageUpload(event)">
+                        <div id="upload-area" onclick="document.getElementById('image-upload').click()"
+                            class="border-2 border-dashed border-stone-300 rounded-xl p-8 text-center cursor-pointer hover:bg-stone-50 transition-colors">
+                            <div id="upload-placeholder">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-stone-400 mb-2"></i>
+                                <p class="text-stone-500 text-sm">Click to upload an ordinary photo</p>
+                            </div>
+                            <img id="image-preview" class="hidden max-h-48 mx-auto rounded-lg shadow-sm object-cover"
+                                alt="Preview of uploaded ordinary object">
+                        </div>
+                    </div>
+
+                    <div id="image-analysis-result"
+                        class="hidden mb-6 p-6 bg-[#FDFBF7] rounded-lg border border-stone-200 italic text-stone-800 serif-font text-lg leading-relaxed">
+                        <!-- Analysis will appear here -->
+                    </div>
+
+                    <button id="analyze-btn" onclick="analyzeImage()"
+                        class="w-full bg-stone-300 text-stone-500 px-6 py-3 rounded-xl cursor-not-allowed transition-all duration-300 shadow-none flex items-center justify-center gap-2 mt-auto"
+                        disabled>
+                        <span id="analyze-btn-text">Reveal Beauty ✨</span>
+                        <div id="analyze-loader"
+                            class="loader ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5 hidden">
+                        </div>
+                    </button>
+                </div>
+
+                <!-- AI Feature 3: The Perspective Shifter (New) -->
+                <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-md border border-stone-200 mt-4">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="bg-stone-800 text-white p-3 rounded-full">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h3 class="serif-font text-2xl text-stone-900">The Perspective Shifter</h3>
+                            </div>
+                            <p class="text-stone-600 mb-6">
+                                Caught in a moment of frustration or boredom? Type it below (e.g., "stuck in traffic,"
+                                "washing dishes"). Watch as the narrative shifts to one of meaning and presence.
+                            </p>
+
+                            <div class="relative">
+                                <input type="text" id="perspective-input" placeholder="e.g., Waiting in a long line..."
+                                    class="w-full p-4 pr-12 rounded-xl border border-stone-300 focus:border-stone-500 focus:ring-1 focus:ring-stone-500 outline-none transition-all bg-stone-50">
+                            </div>
+
+                            <button onclick="shiftPerspective()" id="shift-btn"
+                                class="mt-4 bg-stone-800 text-white px-8 py-3 rounded-xl hover:bg-stone-700 transition-all duration-300 shadow-md flex items-center justify-center gap-2">
+                                <span id="shift-btn-text">Shift My View ✨</span>
+                                <div id="shift-loader"
+                                    class="loader ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5 hidden">
+                                </div>
+                            </button>
+                        </div>
+
+                        <div
+                            class="bg-[#FDFBF7] p-8 rounded-xl border border-stone-200 h-full min-h-[200px] flex flex-col justify-center items-center text-center relative overflow-hidden">
+                            <div
+                                class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-stone-300 to-transparent opacity-50">
+                            </div>
+                            <i
+                                class="fas fa-feather-alt text-stone-200 text-6xl absolute -bottom-4 -right-4 transform rotate-12"></i>
+
+                            <div id="perspective-placeholder" class="text-stone-400">
+                                <p class="italic">"To see differently is to unlock possibilities..."</p>
+                            </div>
+                            <div id="perspective-result"
+                                class="hidden text-stone-800 serif-font text-xl leading-relaxed italic">
+                                <!-- Result goes here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reader Reflections (Mock Testimonials) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="serif-font text-3xl text-center text-stone-900 mb-16">Reflections on the Journey</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#FDFBF7] p-8 rounded-xl border border-stone-100 relative">
+                    <div class="text-stone-300 text-5xl absolute top-4 right-4 font-serif">”</div>
+                    <p class="text-stone-700 mb-6 italic">"I used to think creativity was just for artists. This book
+                        showed me that my morning walk, how I arrange my desk, and how I listen to my children are all
+                        acts of art."</p>
+                    <div class="text-sm font-bold text-stone-900">— Sarah M.</div>
+                </div>
+                <div class="bg-[#FDFBF7] p-8 rounded-xl border border-stone-100 relative">
+                    <div class="text-stone-300 text-5xl absolute top-4 right-4 font-serif">”</div>
+                    <p class="text-stone-700 mb-6 italic">"Gentle, profound, and incredibly grounding. It feels less
+                        like a book and more like a deep breath in a chaotic world."</p>
+                    <div class="text-sm font-bold text-stone-900">— David K.</div>
+                </div>
+                <div class="bg-[#FDFBF7] p-8 rounded-xl border border-stone-100 relative">
+                    <div class="text-stone-300 text-5xl absolute top-4 right-4 font-serif">”</div>
+                    <p class="text-stone-700 mb-6 italic">"Chapter 13, 'Mistakes as Seeds', completely changed how I
+                        view my failures. A beautiful companion for anyone feeling stuck."</p>
+                    <div class="text-sm font-bold text-stone-900">— Elena R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW ABOUT AUTHOR SECTION -->
+    <section id="author" class="py-24 px-4 bg-[#FDFBF7] border-t border-stone-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <!-- Image Column -->
+                <div class="md:col-span-5 relative">
+                    <div
+                        class="aspect-[3/4] bg-stone-200 rounded-lg overflow-hidden relative shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <!-- Placeholder for Author Image -->
+                        <img src="author.png" alt="The Author" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/30 to-transparent"></div>
+                    </div>
+                    <!-- Decorative elements -->
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-stone-100 rounded-full -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 border-2 border-stone-200 rounded-full -z-10"></div>
+                </div>
+
+                <!-- Text Column -->
+                <div class="md:col-span-7">
+                    <span class="text-stone-400 uppercase tracking-widest text-sm font-medium mb-2 block">The Voice
+                        Behind the Words</span>
+                    <h2 class="serif-font text-4xl text-stone-900 mb-6">About the Author</h2>
+                    <div class="space-y-6 text-stone-600 text-lg leading-relaxed font-light">
+                        <p>
+                            "I remember the morning I first understood the difference between looking and seeing. I was
+                            walking to work... then I noticed the way shadows fell between two buildings."
+                        </p>
+                        <p>
+                            This moment of recognition sparked a journey that would eventually become <i>How to See
+                                Differently</i>. The author is not a guru on a mountaintop, but a companion on the
+                            path—someone who has discovered that the ordinary world is waiting to be seen as
+                            extraordinary.
+                        </p>
+                        <p>
+                            Through these pages, they offer not a manual of rules, but a series of gentle invitations to
+                            wake up to the life you are already living.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="https://www.amazon.com/stores/author/B0FNWPDCLQ/about" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-3 text-stone-800 font-medium border-b-2 border-stone-800 pb-1 hover:text-stone-600 hover:border-stone-400 transition-all">
+                            <span>Visit Author Page</span>
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 px-4 text-center bg-gradient-to-b from-[#FDFBF7] to-[#E8E6E1]">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="serif-font text-4xl md:text-5xl text-stone-900 mb-8">Begin Your Creative Return</h2>
+            <p class="text-xl text-stone-600 mb-10">
+                The creative life isn't waiting for you somewhere else. It is here, in this breath, in this choice.
+            </p>
+            <a href="https://www.amazon.com/dp/B0FR3VL7Z7" target="_blank" rel="noopener noreferrer"
+                class="inline-block bg-stone-800 text-white px-12 py-5 rounded-full text-lg font-medium hover:bg-stone-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                Buy on Amazon
+            </a>
+            <p class="mt-6 text-sm text-stone-500">Available in Paperback and Kindle</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="serif-font text-xl text-stone-200">How to See Differently</span>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="mt-4 md:mt-0 text-xs">
+                &copy; 2024 All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // API Handling
+        const apiKey = ""; // System provides this
+        let uploadedImageBase64 = null;
+
+        // Helper for delays
+        const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+        async function callGemini(prompt, imageBase64 = null) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+            let payloadParts = [{ text: prompt }];
+            if (imageBase64) {
+                // For vision, we add the image data
+                payloadParts.push({
+                    inlineData: {
+                        mimeType: "image/jpeg", // Assuming jpeg for simplicity or matching input
+                        data: imageBase64
+                    }
+                });
+            }
+
+            const payload = {
+                contents: [{ parts: payloadParts }]
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                return data.candidates[0].content.parts[0].text;
+            } catch (error) {
+                console.error(error);
+                // Simple retry logic could go here, but for this demo we return null
+                return "The creative flow is quiet right now. Please try again in a moment.";
+            }
+        }
+
+        // Feature 1: Daily Invitation
+        async function generateInvitation() {
+            const btn = document.getElementById('generate-prompt-btn');
+            const btnText = document.getElementById('prompt-btn-text');
+            const loader = document.getElementById('prompt-loader');
+            const resultArea = document.getElementById('daily-invitation-result');
+
+            // UI State: Loading
+            btn.disabled = true;
+            btnText.textContent = "Listening...";
+            loader.classList.remove('hidden');
+            resultArea.classList.add('hidden');
+
+            const prompt = "You are the author of 'How to See Differently: Unlocking the Creative Way of Life'. Generate a single, unique, gentle, and short instruction for a creative mindfulness act. It should be something the user can do right now in 1 minute. Focus on senses, light, shadow, or texture. Style: poetic, calm, inviting. Example: 'Notice the way the light falls on the nearest wall and changes moment by moment.'";
+
+            const result = await callGemini(prompt);
+
+            // UI State: Success
+            resultArea.innerHTML = `"${result}"`;
+            resultArea.classList.remove('hidden');
+            btn.disabled = false;
+            btnText.textContent = "Spark Another Moment ✨";
+            loader.classList.add('hidden');
+        }
+
+        // Feature 2: Image Handling
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onloadend = function () {
+                // Display preview
+                const preview = document.getElementById('image-preview');
+                const placeholder = document.getElementById('upload-placeholder');
+                preview.src = reader.result;
+                preview.classList.remove('hidden');
+                placeholder.classList.add('hidden');
+
+                // Store base64 (strip header)
+                uploadedImageBase64 = reader.result.split(',')[1];
+
+                // Enable analyze button
+                const btn = document.getElementById('analyze-btn');
+                btn.disabled = false;
+                btn.classList.remove('bg-stone-300', 'cursor-not-allowed', 'text-stone-500');
+                btn.classList.add('bg-stone-800', 'text-white', 'hover:bg-stone-700', 'shadow-md');
+            }
+            reader.readAsDataURL(file);
+        }
+
+        async function analyzeImage() {
+            if (!uploadedImageBase64) return;
+
+            const btn = document.getElementById('analyze-btn');
+            const btnText = document.getElementById('analyze-btn-text');
+            const loader = document.getElementById('analyze-loader');
+            const resultArea = document.getElementById('image-analysis-result');
+
+            // UI State: Loading
+            btn.disabled = true;
+            btnText.textContent = "Observing...";
+            loader.classList.remove('hidden');
+            resultArea.classList.add('hidden');
+
+            const prompt = "You are the author of 'How to See Differently: Unlocking the Creative Way of Life'. Look at this image of an ordinary scene or object. Write a short, poetic reflection (2-3 sentences max) that reveals the hidden beauty, texture, or light in this specific image. Transform the ordinary into the extraordinary. Be gentle and observational. Do not use technical terms.";
+
+            const result = await callGemini(prompt, uploadedImageBase64);
+
+            // UI State: Success
+            resultArea.innerHTML = `"${result}"`;
+            resultArea.classList.remove('hidden');
+            btn.disabled = false;
+            btnText.textContent = "Reveal Beauty ✨";
+            loader.classList.add('hidden');
+        }
+
+        // Feature 3: Perspective Shifter
+        async function shiftPerspective() {
+            const input = document.getElementById('perspective-input');
+            const userInput = input.value.trim();
+            if (!userInput) return;
+
+            const btn = document.getElementById('shift-btn');
+            const btnText = document.getElementById('shift-btn-text');
+            const loader = document.getElementById('shift-loader');
+            const placeholder = document.getElementById('perspective-placeholder');
+            const resultArea = document.getElementById('perspective-result');
+
+            // UI State: Loading
+            btn.disabled = true;
+            btnText.textContent = "Shifting...";
+            loader.classList.remove('hidden');
+            placeholder.classList.remove('hidden'); // Keep placeholder but maybe dim it?
+            resultArea.classList.add('hidden');
+
+            const prompt = `You are the author of 'How to See Differently: Unlocking the Creative Way of Life'. The user is experiencing this mundane or frustrating situation: "${userInput}". 
+            Rewrite this experience for them. Show them the hidden beauty, the pause, the rhythm, or the lesson within it. 
+            Keep it short (2-3 sentences). Poetic, comforting, and transformative.`;
+
+            const result = await callGemini(prompt);
+
+            // UI State: Success
+            placeholder.classList.add('hidden');
+            resultArea.innerHTML = `"${result}"`;
+            resultArea.classList.remove('hidden');
+            btn.disabled = false;
+            btnText.textContent = "Shift My View ✨";
+            loader.classList.add('hidden');
+
+            // Clear input slightly for UX? No, keep it so they see what they wrote.
+        }
+
+        // UI Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+
+</html>
